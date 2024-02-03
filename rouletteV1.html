@@ -340,15 +340,23 @@
                 <fieldset>
                     <legend>Valeur des jetons</legend>
             <div class="valeurDesJetons">
+
+                <p style="display:flex"> 
+                    <input id="jeton1" type="checkbox" class="switch" checked>
+                    <label for="jeton1"><input type="number" id="valeurJeton1" name="valeurJeton1" step="0.1" min="0" placeholder="0,50" lang="fr" value="0.50"  /> Valeur de la mise de base pour les chances simples</label>
+                </p>
+
+                <p style="display:flex">
+                    <input id="inclureZero" type="checkbox" class="switch">
+                    <label for="inclureZero"> Inclure le zéro</label>
+                </p>
+
                     <p style="display:flex"> 
                         <input id="jeton0" type="checkbox" class="switch" checked>
-                        <label for="jeton0"><input type="number" id="valeurJeton0" name="valeurJeton1" step="0.1" min="0" placeholder="0,10" lang="fr" value="0.10"  /></label>
+                        <label for="jeton0"><input type="number" id="valeurJeton0" name="valeurJeton1" step="0.1" min="0" placeholder="0,10" lang="fr" value="0.10"  /> Valeur minimale du jeton (pour 0 ou numéros)</label>
                     </p>
-                    <p style="display:flex"> 
-                        <input id="jeton1" type="checkbox" class="switch" checked>
-                        <label for="jeton1"><input type="number" id="valeurJeton1" name="valeurJeton1" step="0.1" min="0" placeholder="0,50" lang="fr" value="0.50"  /></label>
-                    </p>
-                    <p style="display:flex"> 
+
+                     <!-- <p style="display:flex"> 
                         <input id="jeton2" type="checkbox" class="switch">
                         <label for="jeton2"><input type="number" id="valeurJeton2" name="valeurJeton2" step="0.5" min="0" placeholder="1,00" lang="fr" value="1"/></label>
                     </p>
@@ -363,7 +371,7 @@
                     <p style="display:flex"> 
                         <input id="jeton5" type="checkbox" class="switch">
                         <label for="jeton5"><input type="number" id="valeurJeton5" name="valeurJeton5" step="5" min="0" placeholder="10,00" lang="fr" value="10" /></label>
-                    </p>
+                    </p> -->
 
             </div>
                 <!-- <p><button>Démarrer une partie</button></p> -->
@@ -384,10 +392,7 @@
                             <input id="cscommNumero" type="checkbox" class="switch">
                             <label for="cscommNumero"> Jouer les chances simples comme des numérros</label>
                         </p>
-                        <p style="display:flex">
-                            <input id="inclureZero" type="checkbox" class="switch">
-                            <label for="inclureZero"> Inclure le zéro</label>
-                        </p>
+
                         <p style="display:flex">
                             <input id="annulerMontante" type="checkbox" class="switch" checked>
                             <label for="annulerMontante">Annuler montante en cas de profit</label>
@@ -399,7 +404,7 @@
             <div class="bloc-droite">
                 <fieldset> 
                     <legend>Gestion des mises</legend>
-                        <h3>Choix des montantes</h3>
+                        <h3>Choix de de la montante</h3>
                         <p style="display:flex">
                         <select id="MontanteChoix">
                                 <option value="montante0" selected>Choisir une montante</option>
