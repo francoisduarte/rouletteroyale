@@ -1,0 +1,125 @@
+
+*{
+    min-width: 0;
+    font:inherit;
+    margin:0;
+    padding:0;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+img, video, svg{
+    display:block;
+    height: auto;
+    max-width: 100%;
+}
+h1, h2, h3, h4, h5, h6{ text-wrap: balance;}
+p{ text-wrap: pretty;}
+
+body{
+    margin: 0;
+    min-height : 100dvh; 
+    background-color: rgb(228, 227, 227);
+    font-size: 11px;
+    font-family: Georgia, 'Times New Roman', Times, serif   ;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,0.3255427170868347) 39%, rgba(110,168,237,1) 100%); 
+
+    /* background: rgb(238,231,174);
+background: radial-gradient(circle, rgba(238,231,174,0.3255427170868347) 39%, rgba(110,168,237,1) 100%); */
+}
+header{
+    height: 50px;
+    position: relative;
+    display: flex;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+main{
+    width: 960px;
+    min-height: 400px;
+    margin: 0 auto;
+}
+
+footer{
+    width: 100%;
+    background-color : black;
+    min-height: 180px;
+    color: white;
+}
+
+
+ul, li{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+
+.centrageElement{
+    display: flex;
+    width: 100%;
+    justify-content : center;
+    align-items : center;
+
+}
+
+#idTheNumero2{
+    background-color: #000851; 
+    min-height: 20px;
+    font-weight: bold; 
+    font-size: 70px;
+} 
+
+
+/* gridi pour actualités */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    grid-gap: 16px;
+    background: rgb(255, 2, 2);
+    background: linear-gradient(180deg, rgba(54,54,54,1) 0%, rgba(128,128,128,0) 100%);
+  }
+  
+  .card {
+    display: grid;
+    grid-template-rows: max-content 180px 1fr;
+    border: 1px solid white;
+    background: rgb(255, 2, 2);
+    background: rgb(255, 2, 2);
+    background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgba(128,128,128,0) 100%);
+
+  }
+  
+  .card img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .footer{ 
+        background-color: black; 
+        color: white;
+        padding : 10px 0px;
+        text-align: center;
+    }
+    h3{ margin-bottom: 20px;}
+
+    .header h2{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .card .header,
+    .card .content{
+        margin: 10px;
+    }
+    .card .content{
+        margin-top: 0;
+    }
+

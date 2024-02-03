@@ -1,0 +1,350 @@
+/* ------------------  LES onglets -------------------- */
+/* ------------------          -------------------- */
+
+#methodes {
+  background-color: rgb(63, 63, 63);
+  width: 600px;
+  min-height: 580px;
+  margin : 10px auto;
+  border-radius : 12px;
+  box-shadow: rgb(255, 255, 255) 0px 22px 70px 4px;
+  
+}
+main.maintab{
+    margin: 10px 20px; 
+    width: 560px;
+}
+
+div.flex{
+    display:flex;
+    justify-content: space-between;
+}
+div.flex > div{
+    width: 280px;
+    min-height: 100px;
+}
+/*
+div.bloc-droite{background-color : red;}
+div.bloc-gauche{background-color : green;} */
+
+
+fieldset{  padding: 10px; margin-bottom: 10px;}
+div.total{  padding-right: 10px; margin: 0; margin-bottom: 10px;width: 550px; }
+div.bloc-gauche fieldset{
+    margin: 0px;
+
+}
+div.bloc-gauche fieldset{margin-right: 20px; margin-bottom: 7px; }
+div.bloc-droite fieldset{margin-right: 7px; }
+hr { margin: 10px 0px;}
+
+
+.tabcontent {
+  display: none;
+  color: white;
+  background-color: rgb(63, 63, 63);
+  min-height: 100%;
+  padding-bottom: 10px;
+}
+
+.tabcontent p{
+  padding : 1px 0px;
+}
+/* Style pour les onglets */
+.tab button {
+  background-color: #181717;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding:10px 7px;
+  transition: 0.3s;
+  min-width: 92px;
+  color: rgb(112, 112, 112);
+  font-size: 12px;
+ border-top-left-radius: 12px;
+
+}
+button.tablinks:nth-child(1),
+.tab button:nth-child(1) {
+    border-top-left-radius: 12px;
+
+  }
+
+
+  button.tablinks{
+    min-width: 70px;
+
+  
+  }
+  button.tablinks:nth-child(1){
+    border-top-left-radius: 12px;
+
+
+  
+  }
+  
+  .centrageElement button{
+    width: 100%; 
+  }
+  
+  
+
+
+
+
+/* Changement de couleur lors du survol */
+.tab button:hover {
+  background-color: #ddd;
+  background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(131, 131, 131) 35%, rgb(63, 63, 63) 100%);
+  color: white;
+}
+
+/* Style pour l'onglet actif */
+.tab button.active {
+  background-color: rgb(63, 63, 63);
+  color: white;
+  border-top-left-radius: 12px;
+}
+
+
+
+#MontanteChoix {
+    background-color: #181717; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    padding: 5px; /* Espacement intérieur */
+    border: none; /* Pas de bordure */
+    border-radius: 12px; /* Bords arrondis */
+    font-size: 11px; /* Taille de la police */
+    -webkit-appearance: none; /* Supprime l'apparence native pour Webkit/Blink */
+    -moz-appearance: none; /* Supprime l'apparence native pour Firefox */
+    appearance: none; /* Supprime l'apparence native standard */
+}
+
+/* Pour styliser la flèche déroulante */
+#MontanteChoix{
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2224%22%20height%3D%2224%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22%23ffffff%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M7%2010l5%205%205-5z%22/%3E%3C/svg%3E');
+    background-repeat: no-repeat;
+    background-position: right 10px top 50%;
+    background-size: 24px;
+    /*background-color: orange; */
+}
+input[type="number"] {
+    border: 1px solid #181717; /* Bordure noire */
+    background-color: #181717; /* Fond gris clair */
+    padding: 2px; /* Espacement intérieur */
+    width: 44px;
+    max-width: 50px;
+    font-size: 11px;
+    color: white;
+    /* Ajoutez d'autres propriétés CSS selon vos besoins */
+}
+
+.table-container{
+    width: 100%;
+    height: 430px; /* Hauteur fixe pour le conteneur */
+    overflow-y: auto; /* Ajoute un scrollbar vertical si nécessaire */
+
+}
+.container  {
+    width: 100%;
+    min-width: none;
+    max-height: 550px; /* Hauteur fixe pour le conteneur */
+    overflow-y: auto; /* Ajoute un scrollbar vertical si nécessaire */
+}
+.container2  {
+    width: 100%;
+    min-width: none;
+    height: 410px; /* Hauteur fixe pour le conteneur */
+    overflow-y: hidden; /* Ajoute un scrollbar vertical si nécessaire */
+}
+
+/* Styliser le scrollbar en entier (fonctionne sur WebKit/Blink browsers comme Chrome, Safari, et les dernières versions d'Edge) */
+div::-webkit-scrollbar {
+    width: 8px; /* Largeur du scrollbar */
+    height: 8px;
+}
+
+/* Styliser le "track" (la partie où le "thumb" se déplace) */
+div::-webkit-scrollbar-track {
+    background: rgb(63, 63, 63); /* Couleur de fond du track */
+}
+/* Styliser le "thumb" (la partie que vous déplacez) */
+div::-webkit-scrollbar-thumb {
+    background: #690000; /* Couleur du thumb */
+}
+/* Styliser le "thumb" au survol ou au clic */
+div::-webkit-scrollbar-thumb:hover {
+    background: #a70202; /* Couleur du thumb au survol */
+}
+
+
+
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* Pour éliminer l'espace entre les bordures */
+    background-color: #292929; /* Fond gris clair pour le tableau */
+}
+
+thead {
+    background-color: #363636; /* Fond plus foncé pour l'en-tête */
+}
+
+th, td {
+    border: 1px solid #161616; /* Bordures en gris moyen */
+    padding: 2px; /* Très peu de padding */
+    text-align: center; /* Alignement du texte */
+    font-size: 10px;
+    white-space: nowrap;
+}
+
+
+td:nth-child(1){ padding-left : 10px;text-align: left; }
+td:not(:nth-child(1)) { color: #acacac }
+td:not(:nth-child(1)) p { display:flex; justify-content: center; align-items: center;  }
+
+/* th:nth-child(2), td:nth-child(2){ width : 40px;}
+th:nth-child(3), td:nth-child(3){ width : 40px;}
+th:nth-child(4), td:nth-child(4){ width : 40px;}
+th:nth-child(5), td:nth-child(5){ width : 40px;} */
+
+
+#Tab5 table thead th:nth-child(1), #Tab5 table thead td:nth-child(1){width : 30px;}
+
+tr:nth-child(even) {
+    background-color: #2c2c2c; /* Fond gris alterné pour les lignes paires */
+}
+
+tr:not(:has(th)) {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 8px;
+}
+tr:not(:has(th)):hover {
+    background-color: #0008515b;
+}
+
+td.ecartNotification{
+    color: white;
+    background-color: rgba(169, 247, 248, 0.40);
+}
+
+
+
+.badge {
+    background-color: rebeccapurple;
+    background-color: rgb(128, 78, 3);
+    background-color: rgb(59, 123, 219);
+    background-color: rgb(6, 107, 45);
+    color: white;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;   
+    line-height: 16px;
+    text-align: center;
+    display: inline-block; /* Permet de définir la largeur et la hauteur */
+    display: flex;
+    justify-content: center;
+    align-items : center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9px;
+    padding: 1px;
+    font-weight: bold;
+  }
+
+
+
+
+
+  .span-rond {
+    display: inline-block; /* Permet de définir la largeur et la hauteur */
+    width: 50px;          /* Largeur de l'élément */
+    height: 50px;         /* Hauteur de l'élément, doit être égale à la largeur */
+    background-color: blue; /* Couleur de fond */
+    border-radius: 50%;   /* Crée une forme circulaire */
+    text-align: center;   /* Centre le texte à l'intérieur du span */
+    line-height: 50px;    /* Centre verticalement le texte à l'intérieur du span */
+}
+
+
+ul.sectionnerGoupeCheckbox{
+    height: 40px; 
+    width: 100%;
+    display:flex; 
+    flex-wrap: wrap; 
+    padding : 10px 0;
+    margin-bottom : 10px;
+}
+
+.cacheApplication{
+    width: 36px;
+    height: 40px;
+}
+
+.tab button{ margin-right: 2px;}
+
+.valeurDesJetons{
+    display:flex;
+    width: 100%;
+    flex-wrap: wrap;
+
+}
+.valeurDesJetons p{
+    margin: 0 2px;
+ 
+}
+
+
+/* couleurs des methodes */
+
+
+.familleCouleur { color: #ff6347}
+.famillePaire { color: #289807 }/* VERT du swich */
+.familleMP{ color: #1c8dff  }/* orange du swich */
+.familleColonnes{ color: #e2269a} /* score negatif orange/rouge  color: #e0006c*/
+.familleDouzaines { color: #ffd700 }/* gris foncé */
+.famille12atable { color: #9cdcfe }/* vertpoisitif scofe */
+.familleCresus { color: #00ff7f }
+.familleTiers { color: #79a981 }
+.familleAstro { color: #faeca2}
+.familleOrphelins{ color:  #ce9178}
+.familleVoisins { color:  #815288}
+
+.famcoul { color: #ff6347}
+.famcoul { color: #289807 }/* VERT du swich */
+.fampaire { color: #e2269a }/* orange du swich */
+.fammanque { color: #00ff7f }/* vertpoisitif scofe */
+.famdouz { color: #e00000} /* score negatif orange/rouge */
+.famcol { color: #1f1f1f }/* gris foncé */
+
+.famcoul { color: #9cdcfe }/* bleu clari propriété */
+.famcoul { color: #ffd700 }/* orange accolade */
+.famcoul { color: #d7ba7d }/* orange clair nom des sélecteurs */
+.famcoul { color: #ce9178 }/* orange plus claire avec le diezse */
+.famcoul { color: #6a9955 }/* vert commentaires */
+.famcoul { color: #cccccc }/* gris clair */
+.famcoul { color: #1c8dff }/* bleu (parentheses) */
+
+.html{color: rgb(25, 94, 54);}
+.css{color: rgb(104, 179, 35);}
+.js{color: rgb(28, 98, 179);}
+
+
+#rattrapageExplications,
+#modeAutomatiqueExplications{
+    padding: 5px 0;
+}
+
+
+#tableau-methodes-de-jeu,
+.table-container table{
+ color: white;  
+}
+/* tabcontent */
+
+th{ color: black;}
+
+#Tab2,
+#Tab3{
+    border-radius : 12px;
+}

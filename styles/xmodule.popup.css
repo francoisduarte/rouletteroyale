@@ -1,0 +1,227 @@
+
+/* ------------------  POP UP -------------------- */
+/* ------------------          -------------------- */
+
+.popup-overlay{
+    position:fixed;
+    top:0; 
+    left:0; 
+    right: 0; 
+    bottom:0; 
+    background: rgba(0,0,0,0.7); 
+    z-index: 98;
+    display:none;
+} 
+
+.activePopup{ display: block !important}
+
+.popup-content{ 
+    max-width : 180px; 
+    padding: 20px; 
+    min-height: 400px;
+    box-sizing: border-box; 
+    background-color: #fff; 
+    width: 100%; 
+    position: absolute; 
+    top: 50%; 
+    left : 50%; 
+    transform: translate(-50%,-50%); 
+
+}
+.popup-content p{ 
+    margin: 20px 0px;
+}
+.popup-link{
+    text-decoration:none; 
+    color: #ffffff; 
+    background-color: black; 
+    padding: 10px 20px; 
+    border-radius : 4px; 
+    display: inline-block;
+}
+.popup-exit{ 
+    position: absolute; 
+    top:-10px; 
+    right: -10px; 
+    text-decoration: none; 
+    color: white; 
+    background-color: black; 
+    padding : 5px 10px; 
+    border-radius : 5px; 
+}
+
+textarea#nettoyage,
+textarea#exportPermanence{
+     min-height : 120px;
+    text-align: center;
+    font-weight: bold;
+    padding: 4px;
+    display: block;
+    margin-bottom: 10px;
+    width: 80px;
+    display:block;
+    overflow-x:hidden;
+    overflow-y: auto;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+/* Styliser le scrollbar en entier (fonctionne sur WebKit/Blink browsers comme Chrome, Safari, et les dernières versions d'Edge) */
+textarea::-webkit-scrollbar {
+    width: 7px; /* Largeur du scrollbar */
+}
+
+/* Styliser le "track" (la partie où le "thumb" se déplace) */
+textarea::-webkit-scrollbar-track {
+    background: #fff; /* Couleur de fond du track */
+}
+
+/* Styliser le "thumb" (la partie que vous déplacez) */
+textarea::-webkit-scrollbar-thumb {
+    background: #690000; /* Couleur du thumb */
+}
+
+/* Styliser le "thumb" au survol ou au clic */
+textarea::-webkit-scrollbar-thumb:hover {
+    background: #a70202; /* Couleur du thumb au survol */
+}
+
+
+/* ------------------  FIN DU POP UP -------------------- */
+/* ------------------          -------------------- */
+
+
+#popup-overlay3 ul{
+
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+#popup-overlay3 ul li{
+
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+#popup-overlay3 ul li:nth-child(1){
+    margin-top: 10px !important;
+}
+
+
+#popup-overlay3 ul li p{
+    margin:0;
+    padding:1px;
+}
+
+#popup-overlay3 .popup-content{
+    max-width : 220px; 
+    padding: 20px; 
+    min-height: 400px;
+    box-sizing: border-box; 
+    background-color: #fff; 
+    width: 100%; 
+    position: absolute; 
+    top: 50%; 
+    left : 50%; 
+    transform: translate(-50%,-50%); 
+
+}
+
+
+#popup-overlay3 .popup-content textarea{ 
+    text-align:center; 
+    display: flex; 
+    justify-content:center;
+    border: 1px solid black;
+    color: black;
+    font-size: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: rgb(122, 135, 234);
+ }
+ #popup-overlay3 textarea::placeholder,
+textarea::placeholder {
+        color: #909090; /* Couleur du placeholder */
+        font-style: italic; /* Style de la police */
+        /* Ajoutez ici d'autres styles si nécessaire */
+     text-align:center; 
+     color: grey;
+    font-size: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+ }
+
+
+
+
+
+ textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #909090;
+    font-style: italic;
+    text-align:center; 
+    color: grey;
+    font-size: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+    padding-top: 4px;
+    border: 1px sold grey;
+}
+
+textarea::-moz-placeholder { /* Firefox 19+ */
+    color: #909090;
+    font-style: italic;
+    opacity: 1; /* Firefox diminue l'opacité par défaut */
+    text-align:center; 
+    color: grey;
+    font-size: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+textarea:-ms-input-placeholder { /* IE 10+ */
+    color: #909090;
+    font-style: italic;
+    text-align:center; 
+    color: grey;
+    font-size: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+textarea:-moz-placeholder { /* Firefox 18- */
+    color: #909090;
+    font-style: italic;
+    text-align:center; 
+    color: grey;
+    font-size: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+.popup-content h2{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 4px;
+
+}
+.popup-content ul{
+    margin-top: 10px;
+}
+.popup-content li{
+    margin-bottom: 4px;
+}
+
+.popup-content-container  {
+    width: 100%;
+    min-width: none;
+    min-height: 200px;
+    max-height: 400px; /* Hauteur fixe pour le conteneur */
+    overflow-y: auto; /* Ajoute un scrollbar vertical si nécessaire */
+}
+
+.popup-content-container h3 {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.popup-content-container input[type="number"]{
+    width: 36px;
+    text-align:center;
+}

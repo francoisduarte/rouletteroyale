@@ -1,0 +1,273 @@
+#permanence{
+    /* LE width est le width du main (bloc container) soit 960px */
+      width: 100%;
+      height: 50px;
+      display: flex;
+  
+  }
+  
+  .material-icons{color: #bcbcbc;}
+  .material-icons:hover{color: white; transition: background-color 0.5s ease;}
+  .material-icons::before{content:attr(add_circle);cursor: pointer;}
+  .material-icons::before{content:attr(delete_forever);cursor: pointer;}
+  .poubelle{ color: red;}
+  .poubelle:hover{ color: white;}
+  .material-icons::before{content:attr(switch_access_shortcut);cursor: pointer;}
+  
+  .material-icons::before{content:attr(view_headline);cursor: pointer;}
+  .material-icons::before{content:attr(settings_suggest);cursor: pointer;}
+  
+  td.trend .material-icons::before{content:attr(arrow_drop_down);cursor: pointer; color: red;}
+  td.trend .material-icons::before{content:attr(arrow_drop_up);cursor: pointer; color: green;}
+  td.trend .material-icons::before{content:attr(arrow_right);cursor: pointer;}
+  
+  
+  #permanence div{
+    border-radius : 4px;
+    height: 100%;
+    backdrop-filter: blur(10px);
+    background-color: rgba(12, 11, 11, 0.89); 
+    margin-right: 3px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    display: flex;
+  
+    align-items: center; /* Centrage vertical */
+  
+  }
+  #permanence div:nth-child(1),
+  #permanence div:nth-child(3),
+  #permanence div:nth-child(4){
+      justify-content: center; /* Centrage horizontal */
+  
+  }
+  #permanence div:nth-child(2){
+      padding-left: 10px;
+  }
+  #permanence div:nth-child(3){
+    padding-left: 10px;
+    justify-content: start;
+
+}
+  #permanence div:last-child{
+    margin-right: 0;
+  
+  }
+  #importer{
+      width: 50px;
+      background-color: orange;
+  }
+  
+  
+  #numeros-sortis{
+      background-color: rgba(12, 11, 11, 0.89); 
+      /* background-color: white; */
+     /* flex-grow: 1; */
+      justify-content:flex-end;
+      flex-direction: row-reverse;
+      /* border: 1px solid #000851; */
+      text-align: left;
+      color: white;
+      font-size:11px;
+      overflow-x: auto; /* Affiche un scrollbar horizontal si le contenu déborde */
+      white-space: nowrap; /* Empêche le contenu de passer à la ligne automatiquement */
+      overflow-y: hidden; /* Cache le scrollbar vertical */
+       /*  overflow-x:hidden; */
+      width: 840px;  
+      border: 1px solid #222;
+     height: 50px;
+  }
+  /* Styliser le scrollbar en entier (fonctionne sur WebKit/Blink browsers comme Chrome, Safari, et les dernières versions d'Edge) */
+  div#numeros-sortis::-webkit-scrollbar {height: 7px; /* Largeur du scrollbar */}
+  /* Styliser le "track" (la partie où le "thumb" se déplace) */
+  div#numeros-sortis::-webkit-scrollbar-track {background: #fff; /* Couleur de fond du track */}
+  /* Styliser le "thumb" (la partie que vous déplacez) */
+  div#numeros-sortis::-webkit-scrollbar-thumb {background: #690000; /* Couleur du thumb */}
+  /* Styliser le "thumb" au survol ou au clic */
+  div#numeros-sortis::-webkit-scrollbar-thumb:hover {background: #a70202; /* Couleur du thumb au survol */}
+  
+  
+  #numeros-sortis span {
+    margin: 0 2px;
+    padding: 2px;
+    
+    display: block;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+  
+  }
+  
+  
+  span#count{ font-size: 11px; font-weight: bold; color : blue}
+  
+  .rouge {
+      color: white;
+      background-color: rgb(167, 6, 28);
+      border: 1px solid grey;
+      font-size: 9px;
+  }
+  
+  .noir {
+      color: white;
+      background-color: #000000;
+      border: 1px solid grey;
+      font-size: 9px;
+  }
+  
+  .vert {
+        color: white;
+        background-color: green;
+        border: 1px solid grey;
+        font-size: 9px;
+  }
+  
+   
+  
+  #reinitialiser{
+      width: 50px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+  
+  }
+  #exporter{
+      width: 50px;
+  
+  }
+
+
+
+  
+
+#undoButton{
+    margin-left: 54px;
+    margin-top: 2px;
+}
+/* button{
+        background-color: black;
+        color: white;
+        font-weight: normal;
+        border-radius : 5px;
+        font-size: 10px;
+        border: 1px solid rgba(9,9,121,1);
+}
+button:hover{
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+} 
+
+
+button#reset{
+  width: 148px;
+  border: 1px solid rgb(121, 9, 26);
+}
+button#reset:hover{
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgb(121, 9, 26) 35%, rgb(241, 72, 100) 100%);
+}
+
+
+*/
+
+
+.button-classique{
+  padding: 10px 10px;
+  min-width: 70px;
+}
+
+
+
+button.pressepapier{
+  width: 100%;
+
+}
+
+button{ 
+  padding : 2px 4px;
+  background-color: black;
+  color: white;
+  border-radius : 7px;
+  font-size : 0.6rem;
+}
+
+
+button:hover{ 
+background: rgba(158,0,0,1);
+}
+
+.btn {
+  text-decoration: none;
+  padding: 5px;
+  font-family: tahoma;
+  font-size: 0.9em;
+  color: #FFFFFF;
+  background-color: #000851;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border: 2px outset #FFFFFF;
+  box-shadow: 3px 3px 12px #444444;
+  -webkit-box-shadow: 3px 3px 12px #444444;
+  -moz-box-shadow: 3px 3px 12px #444444;
+  width: 100%;
+  }
+  
+  
+  .btn:hover {
+  padding: 5px;
+  color: #ffffff; 
+  /* background-color: #b7dde8 #17365d; */
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  /* border: 4px solid #FFFFFF;
+  box-shadow: 1px 1px 4px #777777;
+  -webkit-box-shadow: 1px 1px 4px #777777;
+  -moz-box-shadow: 1px 1px 4px #777777; */
+
+  border: 2px outset #ffffff;
+  box-shadow: 3px 3px 12px #444444;
+  -webkit-box-shadow: 3px 3px 12px #444444;
+  -moz-box-shadow: 3px 3px 12px #444444;
+
+
+
+  background: rgb(0,8,81);
+background: linear-gradient(5deg, rgba(0,8,81,1) 0%, rgba(158,0,0,1) 100%);
+
+
+  }
+
+
+
+/* 
+  button{
+    background-color: black;
+    color: white;
+    font-weight: normal;
+    border-radius : 5px;
+    font-size: 10px;
+    border: 1px solid rgba(9,9,121,1);
+  }
+  button:hover{
+  background: rgb(2,0,36);
+  background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  } */
+
+
+
+
+
+#count2{ font-weight: bold; font-size: 14px;color: red;}
+
+
+/* Animation pour faire apparaître le nouveau numéro */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(2); /* Démarre un peu plus grand */ }
+    to { opacity: 1; transform: scale(1); /* Retourne à la taille normale */ }
+}
+
+/* Classe à ajouter au nouveau numéro lors de son ajout */
+#numeros-sortis span:last-child {
+    animation: fadeIn 2.00s;
+}

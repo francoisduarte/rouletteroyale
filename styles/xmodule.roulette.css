@@ -1,0 +1,238 @@
+
+/* ------------------  La table DE roulette  -------------------- */
+/* ------------------          -------------------- */
+
+.roulette {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+ }
+ 
+ 
+ .roulette-table {
+     display: flex;
+     flex-direction: row;
+     max-width: 100%;
+     margin: 0 auto;
+     box-sizing: border-box;
+ }
+ 
+ 
+ .douzaine{
+     display: grid;
+     grid-template-columns: repeat(4, 50px); /* 3 colonnes, chaque cellule de 20px */
+     grid-template-rows: repeat(3, 50px); /* 3 lignes, chaque cellule de 20px */
+     width: 200px; /* Largeur totale */
+     height: 150px; /* Hauteur totale */
+     gap: 0; /* Pas d'espace entre les boutons */
+     border-right: none;
+ }
+ 
+ 
+ 
+ .number {
+     width: 100%;
+     height: 100%;
+     font-size: 15px;
+     color: white;
+    border:none;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-weight: bold;
+     border-radius: 4px; /* Rend les boutons circulaires */
+     backdrop-filter: blur(10px);
+     border: 2px solid rgba(255, 255, 255, 0.2);
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+     transition: background 0.3s, box-shadow 0.3s;
+ 
+ }
+
+
+ .green {
+     width: 50px;
+     height: 150px; 
+     border-right:none;
+     background: linear-gradient(rgba(0, 128, 0, 0.9), rgba(0, 64, 0, 0.9));
+     box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.3);}
+ .red { 
+     background: linear-gradient(rgba(255, 0, 0, 0.9), rgba(128, 0, 0, 0.9));
+     box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.3);}
+ .black {
+     background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(50, 50, 50, 0.9));
+     box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.3);
+ }
+ /* Effet hover pour les numéros rouges */
+ .red:hover {
+     background: linear-gradient(rgba(255, 50, 50, 0.9), rgba(180, 0, 0, 0.9));
+     box-shadow: inset 0 0 15px rgba(255, 255, 255, 0.5);
+ }
+ 
+ /* Effet hover pour les numéros noirs */
+ .black:hover {
+     background: linear-gradient(rgba(20, 20, 20, 0.9), rgba(70, 70, 70, 0.9));
+     box-shadow: inset 0 0 15px rgba(255, 255, 255, 0.5);
+ }
+ 
+ /* Effet hover pour le numéro vert */
+ .green:hover {
+     background: linear-gradient(rgba(0, 180, 0, 0.9), rgba(0, 100, 0, 0.9));
+     box-shadow: inset 0 0 15px rgba(255, 255, 255, 0.5);
+ }
+ 
+ /* ------------------  LES PARIS -------------------- */
+ /* ------------------          -------------------- */
+ 
+ 
+ .parisDouzaine,
+ .parisChancesSimples{
+     display:flex;
+     height: 50px;
+     margin-left: 50px;
+     margin-right: 50px;
+     justify-content: space-between;
+     color: #939393;
+ 
+ }
+ 
+ 
+ .parisDouzaine div,
+ .parisChancesSimples div{
+     flex: 1;
+     align-items: center;
+     justify-content:center;
+     display:flex;
+     font-size: 12px;
+     font-weight: bold;
+     margin-right: 1px;
+     margin-top:1px;
+     background-color: #bebebe;
+ }
+ .parisDouzaine div:nth-child(3),
+ .parisDouzaine div:nth-child(3){ margin-right: 0; }
+ 
+ 
+ .colonnes{
+     display:flex;
+     flex-direction: column;
+     width: 47px;
+     justify-content: space-between;
+     margin-left: 2px;
+ 
+ }
+ .colonnes div {
+     display:flex;
+     flex-direction: column;
+     height: 50px;
+     justify-content: space-between;
+     align-items: center;
+     justify-content: center;
+     background-color: #bebebe;
+     font-weight: bold;
+     color: #939393;
+     margin-bottom: 1px;
+  }
+ .colonnes div div:nth-child(3){ margin-bottom: 0; }
+
+
+ .zonesparis{ display:none;}
+
+
+
+ .recommandation {
+    background: linear-gradient(rgba(255, 215, 0, 0.4), rgba(255, 165, 0, 0.4)); /* Dégradé or à orange */
+    color: #000; /* Texte en noir pour un bon contraste */
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5); /* Ombrage interne pour un effet de profondeur */
+    border: 2px dashed rgba(255, 215, 0, 0.8); /* Bordure pointillée or */
+    position: relative; /* Position relative pour les pseudo-éléments */
+
+  }
+  
+  /* Animation subtile pour attirer l'attention */
+  .recommandation:hover {
+    background: linear-gradient(rgba(255, 225, 0, 0.9), rgba(255, 175, 0, 0.9));
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.7);
+  }
+  
+  /* Pseudo-élément pour ajouter un symbole de recommandation */
+  .recommandation2::before {
+    content: '✨'; /* Vous pouvez utiliser un caractère spécial ou une icône */
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    z-index: 400;
+    background: rgba(49, 49, 49, 0.9);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; /* Cercle */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+/* 
+
+ .recommended {
+    background: repeating-linear-gradient(
+      45deg,
+      rgba(255, 255, 0, 0.2),
+      rgba(255, 255, 0, 0.2) 10px,
+      rgba(255, 255, 0, 0.4) 10px,
+      rgba(255, 255, 0, 0.4) 20px
+    );
+  }
+
+
+
+
+  .recommandedNum {
+    background: repeating-linear-gradient(
+      45deg,
+      #ffff9988,
+      #ffff9988 10px,
+      #ffffff86 10px,
+      #ffffff 20px
+    ); /* Fond jaune hachuré avec transparence */
+    /* opacity: 0.4; /* Effet de transparence 
+    color: #000; /* Texte en noir pour contraste 
+    border: 2px solid #ffd700; /* Bordure jaune doré 
+  }  */
+  
+  /* Optionnel : Effet d'animation pour attirer l'attention sur la recommandation */
+  /* @keyframes blinker {
+    50% {
+      opacity: 0.5;
+    }
+  } */ 
+  
+  .recommandationPari {
+    animation: blinker 2s linear infinite;
+  }
+  .dernierNumeroSorti {
+    border: 1px solid #ffffff; /* Bordure rouge épaisse */
+    background-color: #ffff99; /* Fond jaune clair */
+    box-shadow: 0 0 10px #ffffff; /* Ombre portée rouge pour un effet de surbrillance */
+    color: black; /* Couleur du texte en noir pour contraste */
+    font-weight: bold; /* Texte en gras */
+    animation: pulse 1s 2; /* Animation pour attirer l'attention ; mettre infinite si on ne veux pas de limitation de durée*/
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      box-shadow: 0 0 10px #ffffff;
+    }
+    50% {
+      transform: scale(1.1);
+      box-shadow: 0 0 15px #ffeeac;
+    }
+    100% {
+      transform: scale(1);
+      box-shadow: 0 0 10px #d9d163;
+    }
+  }
+  
